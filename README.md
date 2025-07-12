@@ -1,6 +1,6 @@
 # Loan Default Risk Analysis & Predictive Modeling
 
-## Overview
+## Project Overview
 
 This project focuses on analyzing loan performance and predicting loan defaults using a real-world lending dataset. It combines SQL-based data analysis, machine learning modeling in Python, and an interactive dashboard in Power BI to provide insights into customer behavior, risk segmentation, and default prediction.
 
@@ -22,7 +22,7 @@ The dataset contains customer loan information including:
        - Fully Paid
        - Charged Off (considered default)
        - Current (excluded during supervised modeling)
-       - 
+    
 ## Tools & Technologies
 
 Data Analysis	SQL Server – Advanced SQL (CTEs, Window Functions, Aggregates)
