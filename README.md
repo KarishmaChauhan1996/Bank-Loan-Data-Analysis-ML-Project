@@ -1,14 +1,18 @@
-# Bank-Loan-Data-Analysis-ML-Project
+# Loan Default Risk Analysis & Predictive Modeling
 
-## Project Overview
+## Overview
+
 This project focuses on analyzing loan performance and predicting loan defaults using a real-world lending dataset. It combines SQL-based data analysis, machine learning modeling in Python, and an interactive dashboard in Power BI to provide insights into customer behavior, risk segmentation, and default prediction.
 
-## Tools & Technologies
-- SQL Server – For data exploration, aggregation, and advanced analytics using window functions.
-- Python (Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn) – For preprocessing, feature engineering, model building, and evaluation.
-- Power BI – For creating interactive dashboards and visual summaries of key metrics.
+## Objective
 
-## Data Description
+- Perform descriptive and exploratory data analysis using SQL to identify default trends and financial risk patterns.
+- Engineer meaningful features for modeling and segment borrowers by risk levels.
+- Build a classification model to accurately predict loan default risk.
+- Design a Power BI dashboard for intuitive, interactive, and actionable insight delivery
+
+## Data Overview
+
 The dataset contains customer loan information including:
 
   - Demographics (State, Employment Length, Home Ownership)
@@ -18,6 +22,13 @@ The dataset contains customer loan information including:
        - Fully Paid
        - Charged Off (considered default)
        - Current (excluded during supervised modeling)
+       - 
+## Tools & Technologies
+
+Data Analysis	SQL Server – Advanced SQL (CTEs, Window Functions, Aggregates)
+ML Modeling	Python – Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
+Dashboarding	Power BI – DAX, Custom Visuals, Slicers, Filters, Trend Visualizations
+Data Format	CSV file – 38,000+ loan records with 20+ features
 
 ## SQL Data Analysis
 
@@ -41,25 +52,42 @@ The dataset contains customer loan information including:
 
 #### Result
 
-- Achieved ROC-AUC Score of 0.98, indicating strong performance
+| Metric             | Value                              |
+| ------------------ | ---------------------------------- |
+| Accuracy           | 98.0%                              |
+| ROC-AUC Score      | 0.9842                             |
+| F1-Score (Default) | 0.93                               |
+| Confusion Matrix   | TP: 963, FN: 104, FP: 47, TN: 6382 |
 
-#### Evaluation:
-
-- Accuracy: 98%
-- F1-score for default class: 0.93
-- Confusion Matrix showed low false negatives
+The model demonstrated high discriminatory power with minimal false negatives, making it suitable for deployment in credit risk scenarios.
 
 ## Power BI Dashboard
 Created a dynamic dashboard to:
 
+  - Analyze loan disbursements and defaults over time
   - Visualize loan trends by state, purpose, term, and year
-  - Analyze default rates over time
   - Segment customers by risk level and loan performance
   - Filter by grade, term, and employment length for detailed insights
+
+## Project Structure
+
+- data/ # Raw and processed datasets
+- notebooks/ # Jupyter notebooks for EDA and modeling
+- scripts/ # Python scripts for cleaning and prediction
+- powerbi/ # Power BI dashboard file (.pbix)
+- outputs/ # Plots, reports, and metrics
+- README.md # Project documentation
 
 ## Key Outcomes
 
 - Identified key drivers of default such as high DTI, low income, and longer term loans.
 - Built a high-performing prediction model for loan default.
 - Delivered an interactive, business-friendly dashboard to explore and monitor loan risk trends.
+
+## Future Enhancements
+
+- Incorporate real-time loan applications for scoring via REST APIs.
+- Add macroeconomic variables (unemployment, inflation).
+- Integrate customer credit bureau data for deeper profiling.
+- Deploy model using Flask + Streamlit + SQL backend
 
