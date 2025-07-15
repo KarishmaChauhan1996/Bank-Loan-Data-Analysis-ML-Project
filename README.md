@@ -21,7 +21,7 @@ The dataset contains customer loan information including:
   - Loan status has three categories:
        - Fully Paid
        - Charged Off (considered default)
-       - Current (excluded during supervised modeling)
+       - Current (ongoing loan payment, excluded during supervised modeling)
     
 ## Tools & Technologies
 
