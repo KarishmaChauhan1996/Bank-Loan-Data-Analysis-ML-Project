@@ -25,10 +25,10 @@ The dataset contains customer loan information including:
     
 ## Tools & Technologies
 
-Data Analysis	SQL Server – Advanced SQL (CTEs, Window Functions, Aggregates)
-ML Modeling	Python – Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
-Dashboarding	Power BI – DAX, Custom Visuals, Slicers, Filters, Trend Visualizations
-Data Format	CSV file – 38,000+ loan records with 20+ features
+- Data Analysis	SQL Server – Advanced SQL (CTEs, Window Functions, Aggregates)
+- ML Modeling	Python – Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
+- Dashboarding	Power BI – DAX, Custom Visuals, Slicers, Filters, Trend Visualizations
+- Data Format	CSV file – 38,000+ loan records with 20+ features
 
 ## SQL Data Analysis
 
